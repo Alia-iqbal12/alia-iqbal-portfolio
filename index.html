@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alia Zafar — Graphic Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09000f;--ink:#fbf7ff;--muted:#b9a8c4;--violet:#8b35ff;--pink:#ef55ff;--lav:#e9d7ff;--line:rgba(255,255,255,.13);--panel:#16051f;--max:1320px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}
+::selection{background:var(--pink);color:#100014}.noise{position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.progress{position:fixed;z-index:90;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,var(--violet),var(--pink))}
+.nav{position:fixed;z-index:80;top:0;left:0;right:0;height:78px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg,rgba(9,0,15,.94),rgba(9,0,15,.2),transparent);backdrop-filter:blur(8px)}
+.brand{font:600 18px "Space Grotesk";letter-spacing:-.05em}.brand b{color:var(--pink)}.navlinks{display:flex;gap:30px;color:var(--muted);font-size:12px}.navlinks a:hover{color:white}
+.hero{min-height:100svh;position:relative;display:grid;align-items:end;padding:140px 5vw 8vh;overflow:hidden}.hero-art{position:absolute;inset:0;background:url("assets/hero-banner.png") center/cover no-repeat;opacity:.18;transform:scale(1.05);filter:saturate(1.25);animation:zoom 15s ease-in-out infinite alternate}.hero-glow{position:absolute;width:60vw;height:60vw;right:-24vw;top:-18vw;border-radius:50%;background:radial-gradient(circle,rgba(139,53,255,.3),transparent 67%);filter:blur(20px)}
+.hero-grid{position:relative;z-index:2;width:min(var(--max),100%);margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:7vw;align-items:end}.eyebrow,.kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--pink)}
+.hero h1{font:600 clamp(70px,10vw,150px)/.79 "Space Grotesk";letter-spacing:-.08em;margin:20px 0 0}.stroke{color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.78)}.gradient{background:linear-gradient(90deg,#fff 0%,#fff 28%,var(--pink) 72%,#a45cff 100%);-webkit-background-clip:text;color:transparent}
+.hero-copy{max-width:410px;color:var(--muted);line-height:1.75;font-size:14px}.hero-copy strong{display:block;color:#fff;font:500 23px/1.15 "Space Grotesk";letter-spacing:-.03em}.hero-copy .micro{margin-top:20px;color:var(--lav);font-size:12px}.scroll{display:flex;align-items:center;gap:12px;margin-top:35px;color:#fff;font-size:11px}.scroll i{width:45px;height:1px;background:var(--pink);display:block;animation:pulse 1.6s infinite}
+.rings{position:absolute;right:7%;top:31%;width:280px;height:280px;border:1px solid rgba(239,85,255,.38);border-radius:50%;animation:float 7s ease-in-out infinite}.rings:before,.rings:after{content:"";position:absolute;border:1px solid rgba(139,53,255,.36);border-radius:50%;inset:23px}.rings:after{inset:63px}
+.section{width:min(var(--max),90%);margin:auto;padding:150px 0}.section-head{display:grid;grid-template-columns:1fr .55fr;gap:8vw;align-items:end;margin-bottom:65px}.section h2{font:600 clamp(45px,6.2vw,86px)/.88 "Space Grotesk";letter-spacing:-.07em;margin:15px 0 0}.section-intro{color:var(--muted);line-height:1.8;font-size:13px}
+.about-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:10vw}.about-statement{font:500 clamp(34px,4.5vw,63px)/1.01 "Space Grotesk";letter-spacing:-.055em}.about-statement em{font-style:normal;color:var(--pink)}.about-copy{border-left:1px solid var(--line);padding-left:30px;color:var(--muted);line-height:1.85;font-size:13px}.about-copy strong{color:white;font-weight:500}.tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.tool{padding:8px 11px;border:1px solid var(--line);border-radius:999px;font-size:10px;color:var(--lav)}
+.services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}.service{position:relative;min-height:245px;padding:34px 36px;border-bottom:1px solid var(--line);overflow:hidden}.service:nth-child(odd){border-right:1px solid var(--line)}.service:before{content:"";position:absolute;width:220px;height:220px;right:-100px;bottom:-120px;border-radius:50%;background:radial-gradient(circle,rgba(239,85,255,.28),transparent 68%);transition:.6s}.service:hover:before{transform:scale(2)}.service .num{font:600 11px "Space Grotesk";color:var(--pink)}.service h3{font:500 clamp(26px,3vw,38px)/1 "Space Grotesk";letter-spacing:-.045em;margin:58px 0 12px}.service p{margin:0;max-width:440px;color:var(--muted);font-size:12px;line-height:1.7}
+.marquee{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:24px 0}.track{display:inline-block;font:500 34px "Space Grotesk";letter-spacing:-.04em;animation:marquee 25s linear infinite}.track span{color:var(--pink);padding:0 25px}
+.work-section{padding-top:130px}.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:65px}.filter{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:10px 16px;font-size:10px;cursor:pointer;transition:.25s}.filter:hover,.filter.active{color:white;border-color:transparent;background:linear-gradient(90deg,var(--violet),var(--pink))}
+.project{margin-bottom:150px}.project-head{display:grid;grid-template-columns:1fr .55fr;gap:7vw;align-items:end;margin-bottom:32px}.project-index{font-size:10px;letter-spacing:.2em;color:var(--pink);font-weight:700;margin-bottom:12px}.project-title{font:500 clamp(42px,6vw,78px)/.87 "Space Grotesk";letter-spacing:-.07em}.project-title small{display:block;font:700 10px "DM Sans";letter-spacing:.18em;color:var(--lav);margin-bottom:14px}.project-desc{color:var(--muted);font-size:13px;line-height:1.75}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;align-items:start}.gallery.four .shot,.gallery.two .shot{grid-column:span 6}.gallery.five .shot{grid-column:span 4}
+.shot{position:relative;overflow:hidden;background:#110019;border:1px solid rgba(255,255,255,.09);cursor:pointer}.shot img{display:block;width:100%;height:auto;transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .5s}.shot:hover img{transform:scale(1.025);filter:saturate(1.08)}.shot .view{position:absolute;right:14px;bottom:14px;padding:8px 10px;background:rgba(10,0,16,.82);border:1px solid rgba(255,255,255,.17);font-size:9px;letter-spacing:.12em;opacity:0;transform:translateY(8px);transition:.3s}.shot:hover .view{opacity:1;transform:none}
+.outcome{margin-top:34px;border-top:1px solid var(--line);padding-top:22px;display:grid;grid-template-columns:160px 1fr;gap:30px}.outcome strong{font-size:9px;letter-spacing:.18em;color:var(--pink)}.outcome p{margin:0;color:#eee5f4;font-size:12px;line-height:1.8;max-width:820px}
+.contact{min-height:92svh;display:grid;place-items:center;position:relative;overflow:hidden;text-align:center;border-top:1px solid var(--line);padding:110px 5vw}.contact:before{content:"";position:absolute;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(139,53,255,.25),transparent 66%);filter:blur(20px);animation:breathe 5s ease-in-out infinite}.contact-inner{position:relative;z-index:2;width:min(1050px,100%)}.contact h2{font:600 clamp(60px,11vw,155px)/.78 "Space Grotesk";letter-spacing:-.085em;margin:22px 0 28px}.contact h2 span{color:var(--pink)}.contact-intro{max-width:520px;margin:0 auto 38px;color:var(--muted);font-size:13px;line-height:1.8}.contact-links{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 auto 32px;text-align:left}.contact-card{position:relative;min-height:112px;padding:20px 22px;border:1px solid var(--line);background:rgba(22,5,31,.55);backdrop-filter:blur(10px);transition:.35s}.contact-card:hover{border-color:rgba(239,85,255,.5);background:rgba(22,5,31,.82);transform:translateY(-5px)}.contact-label{display:block;margin-bottom:14px;font-size:9px;letter-spacing:.18em;color:var(--pink);font-weight:700}.contact-card strong{display:block;color:#fff;font:500 13px "Space Grotesk";word-break:break-word}.contact-arrow{position:absolute;right:18px;bottom:16px;color:var(--muted);font-size:14px}.cta{display:inline-flex;gap:22px;align-items:center;border:1px solid rgba(255,255,255,.28);padding:16px 20px;border-radius:999px;font-size:11px;transition:.3s}.cta:hover{background:#fff;color:#100014;transform:translateY(-4px)}
+footer{padding:28px 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+.modal{position:fixed;z-index:120;inset:0;display:none;align-items:center;justify-content:center;padding:28px;background:rgba(4,0,8,.97)}.modal.open{display:flex}.modal img{max-width:92vw;max-height:91vh;width:auto;height:auto;object-fit:contain;box-shadow:0 30px 100px rgba(0,0,0,.75)}.close{position:absolute;top:20px;right:25px;width:45px;height:45px;border-radius:50%;border:1px solid var(--line);background:#16051f;color:#fff;font-size:22px;cursor:pointer}.modal-label{position:absolute;bottom:22px;left:25px;color:var(--muted);font-size:10px}
+@keyframes zoom{to{transform:scale(1.12)}}@keyframes float{50%{transform:translateY(-18px) rotate(3deg)}}@keyframes pulse{50%{width:70px;opacity:.45}}@keyframes marquee{to{transform:translateX(-50%)}}@keyframes breathe{50%{transform:scale(1.12);opacity:.75}}
+@media(max-width:800px){.nav{height:68px}.navlinks{gap:14px;font-size:10px}.hero-grid,.section-head,.about-wrap,.project-head{grid-template-columns:1fr;gap:35px}.hero{padding-top:120px}.hero h1{font-size:18vw}.rings{display:none}.section{padding:100px 0}.services{grid-template-columns:1fr}.service:nth-child(odd){border-right:0}.gallery.four .shot,.gallery.two .shot,.gallery.five .shot{grid-column:span 6}.outcome{grid-template-columns:1fr;gap:12px}.contact{padding:90px 6vw}.contact-links{grid-template-columns:1fr}.contact-card{min-height:96px}.contact h2{font-size:18vw}footer{flex-direction:column}}
+@media(max-width:520px){.navlinks a:nth-child(3){display:none}.gallery.four .shot,.gallery.two .shot,.gallery.five .shot{grid-column:span 12}.section{width:88%}}
+</style>
+</head>
+<body>
+<div class="noise"></div><div class="progress" id="progress"></div>
+<nav class="nav"><a href="#top" class="brand">ALIA <b>ZA</b>FAR</a><div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero" id="top"><div class="hero-art"></div><div class="hero-glow"></div><div class="rings"></div>
+<div class="hero-grid"><div class="reveal"><div class="eyebrow">Graphic Designer / Visual Storyteller</div><h1>Turning<br><span class="stroke">Vision</span><br><span class="gradient">Into Visuals.</span></h1></div>
+<div class="hero-copy reveal"><strong>Design that gives an idea a presence.</strong><div class="micro">I create visual identities, campaigns, social content and digital design with a sharp focus on typography, composition and clear communication.</div><div class="scroll"><i></i> Scroll to explore</div></div></div></header>
+
+<section class="section" id="about"><div class="section-head reveal"><div><div class="kicker">01 / ABOUT</div><h2>More than<br>just visuals.</h2></div><p class="section-intro">A designer who starts with the message, then builds the visual language around it.</p></div>
+<div class="about-wrap"><div class="about-statement reveal">I don't just make things <em>look good.</em><br>I make the <em>idea visible.</em></div>
+<div class="about-copy reveal"><strong>Hi, I'm Alia.</strong><br><br>I'm a graphic designer focused on turning ideas, messages and brand goals into visual communication that feels clear, intentional and memorable. I work across social media, campaigns, branding, packaging and presentation design.<br><br>My process is simple: understand the purpose first, find the strongest visual direction, then refine the details until everything feels like it belongs together.
+<div class="tools"><span class="tool">Photoshop</span><span class="tool">Illustrator</span><span class="tool">InDesign</span><span class="tool">Figma</span><span class="tool">Canva</span></div></div></div></section>
+
+<section class="section" id="services"><div class="section-head reveal"><div><div class="kicker">02 / SERVICES</div><h2>What I<br>can build.</h2></div><p class="section-intro">Visual solutions for brands that need more than a nice-looking post.</p></div>
+<div class="services">
+<article class="service reveal"><div class="num">01</div><h3>Social Media Design</h3><p>Posts, carousels, campaign sets and content systems designed to create a consistent, recognizable feed.</p></article>
+<article class="service reveal"><div class="num">02</div><h3>Brand Identity</h3><p>Visual direction, typography and brand assets that help a business build a distinct visual presence.</p></article>
+<article class="service reveal"><div class="num">03</div><h3>Marketing Campaigns</h3><p>Concept-led creative built around the audience, message and action you want people to take.</p></article>
+<article class="service reveal"><div class="num">04</div><h3>Packaging Design</h3><p>Product visuals that communicate quickly and present the product with a clear visual personality.</p></article>
+<article class="service reveal"><div class="num">05</div><h3>Presentation Design</h3><p>Structured, persuasive decks that turn information into a visual story without unnecessary clutter.</p></article>
+<article class="service reveal"><div class="num">06</div><h3>Digital Content</h3><p>Creative assets for digital communication, designed to work as part of a wider visual system.</p></article>
+</div></section>
+
+<div class="marquee"><div class="track">SELECTED WORK <span>✦</span> VISUAL SYSTEMS <span>✦</span> BRAND STORIES <span>✦</span> CAMPAIGNS <span>✦</span> SELECTED WORK <span>✦</span> VISUAL SYSTEMS <span>✦</span> BRAND STORIES <span>✦</span> CAMPAIGNS <span>✦</span></div></div>
+
+<section class="section work-section" id="work"><div class="section-head reveal"><div><div class="kicker">03 / SELECTED WORK</div><h2>Four projects.<br>Fifteen visuals.</h2></div><p class="section-intro">The complete project collection, presented as a curated gallery. Nothing is cropped: open any design to see it at full size.</p></div>
+<div class="filters reveal"><button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="school">The Read</button><button class="filter" data-filter="rizter">Rizter</button><button class="filter" data-filter="glowen">Glowen Care</button><button class="filter" data-filter="bites">9 Bites</button></div>
+
+<div id="projects">
+<article class="project reveal" data-project="school"><div class="project-head"><div><div class="project-index">PROJECT 01</div><div class="project-title"><small>ADMISSIONS CAMPAIGN</small>The Read Digital<br>School System</div></div><p class="project-desc">A four-piece admissions campaign built around modern education, future-focused learning and clear admissions messaging.</p></div>
+<div class="gallery four">
+<div class="shot"><img src="assets/project-1.jpg" alt="The Read Digital School System — design 1"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-2.jpg" alt="The Read Digital School System — design 2"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-3.jpg" alt="The Read Digital School System — design 3"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-4.jpg" alt="The Read Digital School System — design 4"><span class="view">VIEW FULL ↗</span></div></div>
+<div class="outcome"><strong>DESIGN OUTCOME</strong><p>A cohesive admissions campaign where each visual carries a different message while the school identity, typography and overall campaign language stay connected.</p></div></article>
+
+<article class="project reveal" data-project="rizter"><div class="project-head"><div><div class="project-index">PROJECT 02</div><div class="project-title"><small>AGENCY SOCIAL MEDIA</small>Rizter<br>Marketing Agency</div></div><p class="project-desc">A four-visual agency campaign balancing educational messaging, promotional content, human imagery and strong calls to action.</p></div>
+<div class="gallery four">
+<div class="shot"><img src="assets/project-5.jpg" alt="Rizter Marketing Agency — design 1"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-6.jpg" alt="Rizter Marketing Agency — design 2"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-7.jpg" alt="Rizter Marketing Agency — design 3"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-8.jpg" alt="Rizter Marketing Agency — design 4"><span class="view">VIEW FULL ↗</span></div></div>
+<div class="outcome"><strong>DESIGN OUTCOME</strong><p>A connected social visual language that lets Rizter move between promotional, educational and service-led messages while retaining a recognizable agency presence.</p></div></article>
+
+<article class="project reveal" data-project="glowen"><div class="project-head"><div><div class="project-index">PROJECT 03</div><div class="project-title"><small>BEAUTY PRODUCT VISUALS</small>Glowen<br>Care</div></div><p class="project-desc">Two product-led skincare creatives focused on premium presentation, clean hierarchy and warm beauty visuals.</p></div>
+<div class="gallery two"><div class="shot"><img src="assets/project-9.jpg" alt="Glowen Care — design 1"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-10.jpg" alt="Glowen Care — design 2"><span class="view">VIEW FULL ↗</span></div></div>
+<div class="outcome"><strong>DESIGN OUTCOME</strong><p>A consistent product-visual direction that keeps the skincare product central while giving the campaign a polished, premium feel.</p></div></article>
+
+<article class="project reveal" data-project="bites"><div class="project-head"><div><div class="project-index">PROJECT 04</div><div class="project-title"><small>RESTAURANT PROMOTIONAL CAMPAIGN</small>9 Bites<br>Food Campaign</div></div><p class="project-desc">A five-piece food promotion series combining appetite-led imagery, offers, pricing, ordering information and a strong red-and-white identity.</p></div>
+<div class="gallery five">
+<div class="shot"><img src="assets/project-11.jpg" alt="9 Bites — design 1"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-12.jpg" alt="9 Bites — design 2"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-13.jpg" alt="9 Bites — design 3"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-14.jpg" alt="9 Bites — design 4"><span class="view">VIEW FULL ↗</span></div><div class="shot"><img src="assets/project-15.jpg" alt="9 Bites — design 5"><span class="view">VIEW FULL ↗</span></div></div>
+<div class="outcome"><strong>DESIGN OUTCOME</strong><p>A recognizable promotional system designed to make the food, offer, price and call to action easy to scan across multiple promotional creatives.</p></div></article>
+</div></section>
+
+<section class="contact" id="contact">
+<div class="contact-inner reveal">
+  <div class="kicker">04 / CONTACT</div>
+  <h2>Let's make<br>something <span>visible.</span></h2>
+  <p class="contact-intro">Have a project, campaign or brand idea in mind? Let's turn it into clear, memorable visuals.</p>
+  <div class="contact-links">
+    <a class="contact-card" href="mailto:aliazafar75@gmail.com" aria-label="Email Alia Zafar">
+      <span class="contact-label">EMAIL</span>
+      <strong>aliazafar75@gmail.com</strong>
+      <span class="contact-arrow">↗</span>
+    </a>
+    <a class="contact-card" href="tel:+923126190477" aria-label="Call Alia Zafar">
+      <span class="contact-label">PHONE</span>
+      <strong>+92 312 6190477</strong>
+      <span class="contact-arrow">↗</span>
+    </a>
+    <a class="contact-card" href="https://www.linkedin.com/in/alia-iqbal-046086383/" target="_blank" rel="noopener noreferrer" aria-label="View Alia Zafar on LinkedIn">
+      <span class="contact-label">LINKEDIN</span>
+      <strong>Connect with me</strong>
+      <span class="contact-arrow">↗</span>
+    </a>
+  </div>
+  <a class="cta" href="mailto:aliazafar75@gmail.com">Start a project <span>↗</span></a>
+</div>
+</section>
+<footer><span>ALIA ZAFAR — GRAPHIC DESIGNER</span><span>Turning Vision Into Visuals.</span><span>© 2026</span></footer>
+
+<div class="modal" id="modal"><button class="close" aria-label="Close">×</button><img id="modalImg" alt=""><div class="modal-label" id="modalLabel"></div></div>
+<script>
+const progress=document.getElementById('progress');
+addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h?scrollY/h*100:0)+'%'},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const modal=document.getElementById('modal'),img=document.getElementById('modalImg'),label=document.getElementById('modalLabel');
+document.querySelectorAll('.shot').forEach(card=>card.addEventListener('click',()=>{const i=card.querySelector('img');img.src=i.src;img.alt=i.alt;label.textContent=i.alt;modal.classList.add('open');document.body.style.overflow='hidden'}));
+function closeModal(){modal.classList.remove('open');document.body.style.overflow=''}document.querySelector('.close').onclick=closeModal;modal.onclick=e=>{if(e.target===modal)closeModal()};addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.querySelectorAll('.filter').forEach(btn=>btn.onclick=()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.project').forEach(p=>p.style.display=f==='all'||p.dataset.project===f?'block':'none')});
+</script>
+</body></html>
